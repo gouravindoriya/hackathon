@@ -17,7 +17,7 @@ const Header = () => {
         (
           
           <div className=''> 
-            login
+            You are logged in
           </div>
          
         ):
