@@ -6,7 +6,8 @@ import authservice from '../src/appwrite/auth.js'
 import {useDispatch} from 'react-redux'
 import { Outlet } from 'react-router-dom'
 import { login,logout } from './store/authSlice';
-
+import Header from './components/Header/Header.jsx'
+import Footer from './components/Footer/Footer.jsx'
 function App() {
   // const [loading,setloading]=useState(true);
   // const dispatch=useDispatch()
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <>
-    {/* <Header/> */}
+    <Header/>
       <main className='w-full min-h-lvh'>
       <Outlet/>
       </main>
